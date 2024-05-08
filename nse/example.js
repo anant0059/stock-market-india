@@ -7,6 +7,7 @@ var API = require('./index');
  * @returns {boolean}
  */
 function getMarketStatus() {
+  console.log("here")
   return API.getMarketStatus()
     .then(function (value) {
       console.log(value.data)
@@ -166,53 +167,53 @@ function getChartDataNew(symbol, date) {
 }
 
 // Examples
-
+console.log("Hello")
 // Returns market status
 getMarketStatus()
 
-// Returns top indices
-getIndices()
+// // Returns top indices
+// getIndices()
 
-// Returns list of companies with their sector name
-getSectorsList()
+// // Returns list of companies with their sector name
+// getSectorsList()
 
-// Get HTML DOM Webscraped quotes of NSE
-getQuotes()
+// // Get HTML DOM Webscraped quotes of NSE
+// getQuotes()
 
-// Get info about a stock
-getQuoteInfo('TCS')
+// // Get info about a stock
+// getQuoteInfo('TCS')
 
-// Get the top gainers of NSE
-getGainers()
+// // Get the top gainers of NSE
+// getGainers()
 
-// Get the top losers of NSE
-getLosers()
+// // Get the top losers of NSE
+// getLosers()
 
-// Get advances vs declines on NSE index
-getInclineDecline()
+// // Get advances vs declines on NSE index
+// getInclineDecline()
 
-// Get all stocks in NSE index
-getIndexStocks('bankNifty')
+// // Get all stocks in NSE index
+// getIndexStocks('bankNifty')
 
-getIntraDayData('TCS', 'month')
+// getIntraDayData('TCS', 'month')
 
-// Get the details of stock using Index
-searchStocks('nifty')
+// // Get the details of stock using Index
+// searchStocks('nifty')
 
-// Get the futures data for a company stock (symbol) and time
-getStockFuturesData('TCS', 'month')
+// // Get the futures data for a company stock (symbol) and time
+// getStockFuturesData('TCS', 'month')
 
-// Get 52 weeks all high stocks
-get52WeekHigh()
+// // Get 52 weeks all high stocks
+// get52WeekHigh()
 
-// Get 52 weeks all low stocks
-get52WeekLow()
+// // Get 52 weeks all low stocks
+// get52WeekLow()
 
-// Get the stocks whose values are highest
-getTopValueStocks()
+// // Get the stocks whose values are highest
+// getTopValueStocks()
 
-// Get the stocks whose volumes sold are highest
-getTopVolumeStocks()
+// // Get the stocks whose volumes sold are highest
+// getTopVolumeStocks()
 
-// Get chart data of a company(symbol) depending on time
-getChartDataNew('VEDL', 'week')
+// // Get chart data of a company(symbol) depending on time
+// getChartDataNew('VEDL', 'week')
